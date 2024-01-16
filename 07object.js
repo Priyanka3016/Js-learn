@@ -2,12 +2,12 @@
 const mySym = Symbol("key1")
 //singleton
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",//symbols key value should be 
+    name: "piruu",
+    "full name": "priyanka",
+    [mySym]: "mykey1",//symbols key value should be in [] 
     age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
+    location: "saidpur",
+    email: "prhh@google.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
@@ -17,10 +17,10 @@ console.log(JsUser.email)
 console.log(JsUser["email"])
 console.log(JsUser[mySym])
 
-JsUser.email = "hitesh@chatgpt.com"
+JsUser.email = "prish@chatgpt.com"
 Object.freeze(JsUser)
-// changes will not propgate after freeze
-JsUser.email = "hitesh@microsoft.com"
+// changes will not propagate after freeze
+JsUser.email = "hitesh@microsoft.com"//will not reflected
 // console.log(JsUser);
 
 JsUser.greeting = function(){
@@ -69,6 +69,7 @@ const obj4 = {5: "a", 6: "b"}
 //spread
 const obj3 = {...obj1, ...obj2}
 
+//assign and soread operator
 //array of object
 const users = [
     {
@@ -97,26 +98,24 @@ console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
 const course = {
-    coursename: "js in hindi",
+    coursename: "js",
     price: "999",
-    courseInstructor: "hitesh"
+    courseInstructor: "priyanka"
 }
 
-// course.courseInstructor
+// course.courseInstructor  is leanthy
+//so we can use below syntax instead of it
 
 const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);
-console.log(instructor);
+console.log(instructor);//instructor can be used instead of  course.courseInstructor
 
+
+// json key value are always string
 // {
-//     "name": "hitesh",
+//     "name": "hmanshu",
 //     "coursename": "js in hindi",
 //     "price": "free"
 // }
-
-[
-    {},
-    {},
-    {}
-]
+//
