@@ -106,7 +106,9 @@ const course = {
 // course.courseInstructor  is leanthy
 //so we can use below syntax instead of it
 
+// this is called destructuring
 const {courseInstructor: instructor} = course
+ // function       const navbar=({comp})=>{}
 
 // console.log(courseInstructor);
 console.log(instructor);//instructor can be used instead of  course.courseInstructor
@@ -119,3 +121,12 @@ console.log(instructor);//instructor can be used instead of  course.courseInstru
 //     "price": "free"
 // }
 //
+
+
+//array of objects
+[
+    {},
+    {},
+    {},
+    {}
+    ]
