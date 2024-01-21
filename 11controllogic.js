@@ -43,3 +43,12 @@ val1 = undefined ?? 15//15
 val1 = null ?? 10 ?? 20//10
 val=null??undefined;//undefined
 val=undefined ?? null;//null
+
+
+
+// Terniary Operator
+
+// condition ? true : false
+
+const Price = 100
+Price <= 80 ? console.log("less than 80") : console.log("more than 80")
