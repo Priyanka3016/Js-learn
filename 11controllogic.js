@@ -32,3 +32,14 @@ switch (month) {
 // "0", 'false', " ", [], {}, function(){}
 //empty array,empty object and function
 
+// Nullish Coalescing Operator (??): null undefined
+//it is used when we are requesting from database then it will print first value if not null or undefined 
+//it will hold value other than null or undefined
+
+let val1;
+val1 = 5 ?? 10//5
+val1 = null ?? 10//10
+val1 = undefined ?? 15//15
+val1 = null ?? 10 ?? 20//10
+val=null??undefined;//undefined
+val=undefined ?? null;//null
